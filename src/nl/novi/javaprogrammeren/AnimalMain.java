@@ -35,9 +35,9 @@ public class AnimalMain {
   Plan of steps:
   1. Make all 3 super-classes - Animal, Wild Animals, Domestic Animals - DONE
   2. Make all animals classes - DONE
-  3. Start to add variables and methods for ALL animals to Animal.java :
+  3. Start to add variables and methods for ALL animals to Animal.java DONE
 
-  4.  Add variables for all DOMESTIC animals : nameOfOwner, favouriteFoodBrand, type.
+  4.  Add variables for all DOMESTIC animals : nameOfOwner, favouriteFoodBrand, type. DONE -
   5. Add variables to all WILD animals: cageName, sex-gender, dayLastFed, countryOfOrigin.
   6.
     */
