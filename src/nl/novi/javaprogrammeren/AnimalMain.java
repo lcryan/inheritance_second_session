@@ -1,37 +1,34 @@
 package nl.novi.javaprogrammeren;
 
-public class AnimalMain {
-    /*
-    Het is traditie om overerving uit te leggen met behulp van dieren. Hier ontkomen jullie dus ook niet aan.
+import nl.novi.javaprogrammeren.overerving.Lion;
 
+public class AnimalMain {
+
+    public void main(String[] args) {
+
+        System.out.println();
+    }
+
+}
+
+
+    /*
     Opdracht
     Bekijk de beschrijving van onderstaande dieren. Bedenk wat je in de superklasse kan zetten. De subklassen hoef
     je nog niet te maken.
 
-    Van een Leeuw slaan we de naam, naam van het hok, geslacht, weekdag dat die het laatst gevoed is en land van
-    herkomst op en de hoeveelheid kinderen.
+    First :
 
-    Van een Tijger slaan we de naam, naam van het hok, geslacht, weekdag dat die het laatst gevoed is en land van
-    herkomst op. Ook willen we het aantal strepen weten.
+    1. Make 2 super classes : one for DomesticAnimals(dog, cat) and one for WildAnimals (lion, tiger, wolf)
+    2. There are in total  5 animals - lion, tiger, wolf, dog and cat
+    2. All WILD animals have the following in common:  cageName, sex-gender, dayLastFed, countryOfOrigin
+    3. All WILD animals also have one unique feature: lion - numberOfKids; tiger: numberOfStripes; wolf: packName.
+    4. All DOMESTIC animals have the following in common: name, nameOfOwner, favouriteFoodBrand, type, gender.
+    5. The cat has ONE special feature: houseCat or outsideCat.
 
-    Van een Hond slaan we naam, naam van het baasje, favoriete voedselmerk, geslacht en soort op.
-    Van een Kat slaan we de naam, naam van het baasje, favoriete voedsel merk, geslacht en soort op. Ook willen we weten
-    of het een binnen of buitenkat is.
+    ALL animals have to be able to do the following :
+    1. method one: be able to move : if they move then print in the console: 0.25 meters moved.
+    2. method two: they have  to make sounds: print out the sort of sound in the console.
+    3.
 
-    Van een Wolf slaan we de naam, naam van het hok, geslacht, weekdag dat die voor het laatste gevoed is en land van
-    herkomst op. Ook willen we de naam van de roedel weten.
-
-    Alle dieren moeten kunnen bewegen. Dit moet als methode toegevoegd worden. Wanneer een dier beweegt print je in
-    de console dat deze 0.25 meter is verplaatst.
-
-    Alle dieren moeten ook een maak-geluid-methode hebben waarmee je het geluid van de dieren afdrukt naar de console.
-
-    Alle dieren slapen 8 uur per dag. Maak een methode slapen en print dit uit wanneer de methode wordt aangeroepen.
-
-    Alle dieren eten. Maak een methode die een String ontvangt en print dan uit wat het dier eet.
-
-    Alles staat hier in het Nederlands beschreven. Schrijf je klassen-, variabele en methodenamen in het Engels.
-
-     */
-
-}
+    */
