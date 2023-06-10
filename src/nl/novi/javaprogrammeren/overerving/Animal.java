@@ -4,29 +4,49 @@ public class Animal {
     final String name;
     final String gender;
 
-    public Animal(String name, String gender) {
+    boolean animalMoved;
+
+    private DomesticAnimal domesticAnimal;
+
+    public DomesticAnimal getDomesticAnimal() {
+        return domesticAnimal;
+    }
+
+    public void setDomesticAnimals(DomesticAnimal domesticAnimal) {
+        this.domesticAnimal = domesticAnimal;
+    }
+
+    public Animal(String name, String gender, boolean animalMoved) {
         this.name = name;
         this.gender = gender;
+        this.animalMoved = animalMoved;
+    }
+
+    public void printName() {
+        System.out.println(name);
     }
 
     public void animalMoved() {
-        boolean animalMoved = false;
+
         if (animalMoved) {
-            System.out.println("The" + name + "animal has moved by 0.25 meters");
+            System.out.println(name + " has moved by 0.25 meters");
+        } else {
+            System.out.println(name + " has not moved today. It's time for a walk.");
         }
     }
 
     public void animalSound() {
-        System.out.println(name + "makes..."); //TODO: here add the sound of the animal - how to do this ???
+        System.out.println(name + "makes "); //TODO: here add the sound of the animal - how to do this ???
     }
 
     public void eat() {
-        System.out.println(name + "ate..."); //TODO : add favourite food variable here! 
+        System.out.println(name + " loves to eat "); //TODO : add favourite food variable here!
     }
 
     public void sleep() {
-        System.out.println(name + "slept....hours"); //TODO : try to add different amount of hours here!
+        System.out.println(name + " slept for 8 hours "); //TODO : make an if/else statement here in case: animal didn't sleep, slept less than 8 hours or animal slept for 8 hours or more.
     }
+
 }
 
 

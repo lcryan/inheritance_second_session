@@ -1,13 +1,19 @@
 package nl.novi.javaprogrammeren;
 
+import nl.novi.javaprogrammeren.overerving.Animal;
+import nl.novi.javaprogrammeren.overerving.Cat;
+import nl.novi.javaprogrammeren.overerving.WildAnimals;
+
 public class AnimalMain {
 
-    public void main(String[] args) {
-
-        System.out.println();
+    public static void main(String[] args) {
+        Cat cat = new Cat("Kitty", "female", false, "Bobby", "Whiskas", "Siamese", Cat.CatType.HOUSECAT);
+        cat.printDomesticAnimalInfo();
     }
 
 }
+
+
 
 
     /*
@@ -29,8 +35,8 @@ public class AnimalMain {
     1. method one: be able to move : if they move then print in the console: 0.25 meters moved.
     2. method two: they have  to make sounds: print out the sort of sound in the console.
     3. method three : ALL animals eat - print out WHAT they eat
-    4.method four: ALL animals have to sleep  8 hours a day (boolean ? )
-  --> all of the methods will be added to the ANIMAL.JAVA!
+    4.method four: ALL animals have to sleep  8 hours a day (boolean and include additional condition)
+  --> all the methods have to be added to ANIMAL.JAVA!
 
   Plan of steps:
   1. Make all 3 super-classes - Animal, Wild Animals, Domestic Animals - DONE
@@ -38,6 +44,7 @@ public class AnimalMain {
   3. Start to add variables and methods for ALL animals to Animal.java DONE
 
   4.  Add variables for all DOMESTIC animals : nameOfOwner, favouriteFoodBrand, type. DONE -
-  5. Add variables to all WILD animals: cageName, sex-gender, dayLastFed, countryOfOrigin.
-  6.
-    */
+  5. Add variables to all WILD animals: cageName, sex-gender, dayLastFed, countryOfOrigin.DONE
+  6. Go alphabetically from CAT and finalize each animal accordingly including methods as well.
+  7. Print all methods and the animal info in the main to see, if it works.
+      */
