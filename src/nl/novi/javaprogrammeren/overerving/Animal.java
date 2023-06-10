@@ -3,8 +3,8 @@ package nl.novi.javaprogrammeren.overerving;
 public class Animal {
     final String name;
     final String gender;
-
     boolean animalMoved;
+    boolean hasEaten;
 
     private DomesticAnimal domesticAnimal;
 
@@ -16,10 +16,11 @@ public class Animal {
         this.domesticAnimal = domesticAnimal;
     }
 
-    public Animal(String name, String gender, boolean animalMoved) {
+    public Animal(String name, String gender, boolean animalMoved, int timeSlept, boolean hasEaten) {
         this.name = name;
         this.gender = gender;
         this.animalMoved = animalMoved;
+        this.hasEaten = hasEaten;
     }
 
     public void printName() {
@@ -27,7 +28,6 @@ public class Animal {
     }
 
     public void animalMoved() {
-
         if (animalMoved) {
             System.out.println(name + " has moved by 0.25 meters");
         } else {
@@ -39,14 +39,16 @@ public class Animal {
         System.out.println(); //TODO: here add the sound of the animal - how to do this ???
     }
 
-    public void eat() {
-        System.out.println(name + " loves to eat "); //TODO : add favourite food variable here!
+    public void hasEaten() {
+        if (hasEaten) {
+            System.out.println(name + "has had a nice dinner! Time for a nice sleep! Nighty night!");
+        } else {
+            System.out.println("You forgot to feed " + name + " !" + "Please make some dinner for " + name + ".");
+        }
     }
 
     public void sleep() {
-        System.out.println(name + " slept for 8 hours "); //TODO : make an if/else statement here in case: animal didn't sleep, slept less than 8 hours or animal slept for 8 hours or more.
-    }
-
+    } // TODO : enter method-control-flow here!
 }
 
 

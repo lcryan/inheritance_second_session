@@ -18,7 +18,7 @@ public class Cat extends DomesticAnimal {
 
     @Override
     public void animalSound() {
-        System.out.println("MEOUUUUWWWWWWWWW....");
+        System.out.println("Kitty makes MEOUUUUWWWWWWWWW....");
     }
 
     public enum CatType {
