@@ -36,7 +36,7 @@ public class Animal {
     }
 
     public void animalSound() {
-        System.out.println(name + "makes "); //TODO: here add the sound of the animal - how to do this ???
+        System.out.println(); //TODO: here add the sound of the animal - how to do this ???
     }
 
     public void eat() {

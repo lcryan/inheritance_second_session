@@ -9,6 +9,10 @@ public class AnimalMain {
     public static void main(String[] args) {
         Cat cat = new Cat("Kitty", "female", false, "Bobby", "Whiskas", "Siamese", Cat.CatType.HOUSECAT);
         cat.printDomesticAnimalInfo();
+        cat.animalSound();
+        cat.sleep();
+        cat.animalMoved();
+        cat.eat();
     }
 
 }
