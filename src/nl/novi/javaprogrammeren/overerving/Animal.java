@@ -66,8 +66,3 @@ public class Animal {
         }
     }
 }
-
-
-// here you add the methods etc. p.p. that ALL animals have in common!!!
-
-//  TODO : variables: gender, name. Methods : move, sound, eat, sleep - set getters and setters for all! Decide what to make private and what to make public!
