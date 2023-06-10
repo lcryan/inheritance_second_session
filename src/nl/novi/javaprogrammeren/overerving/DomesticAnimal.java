@@ -5,7 +5,7 @@ public abstract class DomesticAnimal extends Animal {
     private String favouriteFoodBrand;
     private final String breed;
 
-    public DomesticAnimal(String name, String gender, boolean animalMoved, String nameOfOwner, String favouriteFoodBrand, String breed) {
+    public DomesticAnimal(String name, String gender, boolean animalMoved, boolean hasEaten, String nameOfOwner, String favouriteFoodBrand, String breed) {
         super(name, gender, animalMoved, hasEaten);
         this.nameOfOwner = nameOfOwner;
         this.favouriteFoodBrand = favouriteFoodBrand;

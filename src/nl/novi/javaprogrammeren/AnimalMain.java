@@ -1,15 +1,18 @@
 package nl.novi.javaprogrammeren;
 
-import nl.novi.javaprogrammeren.overerving.Animal;
-import nl.novi.javaprogrammeren.overerving.Cat;
-import nl.novi.javaprogrammeren.overerving.WildAnimals;
+import nl.novi.javaprogrammeren.overerving.*;
 
 public class AnimalMain {
 
     public static void main(String[] args) {
-        Cat cat = new Cat("Kitty", "female", false, "Bobby", "Whiskas", "Siamese", Cat.CatType.HOUSECAT);
-        cat.animalSound();
-        // cannot get out the value here - why not???
+        Cat cat = new Cat("Kitty", "female", false, true, "Willow", "Whiskas", "Siamese", Cat.CatType.HOUSECAT);
+        Dog dog = new Dog("Fifi", "male", true, false, "Kiera", "DoggyFood", "Golden Retriever");
+        Tiger tigger = new Tiger("Tigger", "male", "Tiger's Den", "Wednesday", "South Africa", false, true, 200);
+        cat.printDomesticAnimalInfo();
+        dog.printDomesticAnimalInfo();
+        tigger.printWildAnimalInfo();
+        tigger.hasEaten();
+
     }
 
 }

@@ -4,9 +4,10 @@ public class Animal {
     final String name;
     final String gender;
     boolean animalMoved;
-    boolean hasEaten;
+    boolean ate;
 
     private DomesticAnimal domesticAnimal;
+
 
     public DomesticAnimal getDomesticAnimal() {
         return domesticAnimal;
@@ -16,11 +17,11 @@ public class Animal {
         this.domesticAnimal = domesticAnimal;
     }
 
-    public Animal(String name, String gender, boolean animalMoved, int timeSlept, boolean hasEaten) {
+    public Animal(String name, String gender, boolean animalMoved, boolean ate) {
         this.name = name;
         this.gender = gender;
         this.animalMoved = animalMoved;
-        this.hasEaten = hasEaten;
+        this.ate = ate;
     }
 
     public void printName() {
@@ -40,7 +41,7 @@ public class Animal {
     }
 
     public void hasEaten() {
-        if (hasEaten) {
+        if (ate) {
             System.out.println(name + "has had a nice dinner! Time for a nice sleep! Nighty night!");
         } else {
             System.out.println("You forgot to feed " + name + " !" + "Please make some dinner for " + name + ".");
