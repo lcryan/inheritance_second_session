@@ -25,6 +25,7 @@ public class Animal {
         this.ate = ate;
         this.sleepHours = sleepHours;
     }
+
     public int getSleepHours() {
         return sleepHours;
     }
@@ -32,6 +33,7 @@ public class Animal {
     public void setSleepHours(int sleepHours) {
         this.sleepHours = sleepHours;
     }
+
     public void printName() {
         System.out.println(name);
     }
