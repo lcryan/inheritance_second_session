@@ -5,14 +5,16 @@ import nl.novi.javaprogrammeren.overerving.*;
 public class AnimalMain {
 
     public static void main(String[] args) {
-        Cat cat = new Cat("Kitty", "female", false, true, "Willow", "Whiskas", "Siamese", Cat.CatType.HOUSECAT);
-        Dog dog = new Dog("Fifi", "male", true, false, "Kiera", "DoggyFood", "Golden Retriever");
-        Tiger tigger = new Tiger("Tigger", "male", "Tiger's Den", "Wednesday", "South Africa", false, true, 200);
+        Cat cat = new Cat("Kitty", "female", false, true, 5, "Whiskas", "Whiskas", "Siamese", Cat.CatType.STREETCAT);
+        Dog dog = new Dog("Fifi", "male", true, false, 8, "Kiera", "DoggyFood", "Golden Retriever");
+        Tiger tigger = new Tiger("Tigger", "male", "Tigger's Den", "Wednesday", "Nepal", false, false, 8, 200);
         cat.printDomesticAnimalInfo();
         dog.printDomesticAnimalInfo();
         tigger.printWildAnimalInfo();
         tigger.hasEaten();
-
+        tigger.animalSound();
+        cat.sleep();
+        tigger.sleep();
     }
 
 }
